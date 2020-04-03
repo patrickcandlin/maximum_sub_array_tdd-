@@ -1,0 +1,22 @@
+{
+  "name": "maximum_sub_array_tdd-",
+  "version": "1.0.0",
+  "description": "Practicing TDD",
+  "main": "maxSubArray.js",
+  "scripts": {
+    "test": "mocha maxSubArray.test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/patrickcandlin/maximum_sub_array_tdd-.git"
+  },
+  "author": "Patrick Candlin",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/patrickcandlin/maximum_sub_array_tdd-/issues"
+  },
+  "homepage": "https://github.com/patrickcandlin/maximum_sub_array_tdd-#readme",
+  "dependencies": {
+    "mocha": "^7.1.1"
+  }
+}
