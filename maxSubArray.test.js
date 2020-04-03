@@ -1,4 +1,5 @@
-var assert = require('assert');
+const assert = require('assert');
+const { subArrays } = require('./maxSubArray')
 
 describe('maxSumArray', function() {
 //   describe('#indexOf()', function() {
@@ -7,7 +8,7 @@ describe('maxSumArray', function() {
 //     });
 //   });
     describe('#subArrays', function(){
-        
+
         it('returns an Array', function() {
             assert.equal(Array.isArray(subArrays([1,2,-1])), true)
         })
