@@ -11,15 +11,11 @@ If you have figured out the O(n) solution, try coding another solution using the
 
 
 function subArrays(arr){
-    let arrays = []
-    
-    arr.map((v,i,a) => {
+    return arr.reduce((arrays,v,i,a) => {
         arrays.push(a.slice(i))
         a.map((_,j) => arrays.push(a.slice(i,j)))
-    })
-
-    arrays = arrays.filter(v => v.length)
-    return arrays
+        return arrays
+    },[]).filter(v => v.length)
 }
 
 module.exports = {
