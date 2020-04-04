@@ -12,12 +12,12 @@ If you have figured out the O(n) solution, try coding another solution using the
 
 function subArrays(arr){
     let arrays = []
-    for(let i = 0; i < arr.length; i++){
-        arrays.push(arr.slice(i))
-        for(let j = i; j < arr.length; j++){
-            arrays.push(arr.slice(i,j))
-        }
-    }
+    
+    arr.map((v,i,a) => {
+        arrays.push(a.slice(i))
+        a.map((_,j) => arrays.push(a.slice(i,j)))
+    })
+
     arrays = arrays.filter(v => v.length)
     return arrays
 }
