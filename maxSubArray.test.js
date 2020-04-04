@@ -14,7 +14,9 @@ describe('maxSumArray', function() {
         })
 
         it('should return an array of subarrays', function(){
-            assert.equal(subArrays([1,2,-1]).length, 5)
+            assert.equal(subArrays([1,2,-1]).length, 6)
+            assert.equal(subArrays([1,2]).length, 3)
+            assert.equal(subArrays([1,2,3,4]).length, 10)
         })
 
         it('The elements of #subArrays should be arrays', function(){
