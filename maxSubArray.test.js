@@ -1,5 +1,5 @@
 const assert = require('assert');
-const { subArrays } = require('./maxSubArray')
+const { subArrays, maxSumArray } = require('./maxSubArray')
 
 describe('maxSumArray', function() {
 
