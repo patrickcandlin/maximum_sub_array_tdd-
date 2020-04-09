@@ -9,6 +9,21 @@ Follow up:
 
 If you have figured out the O(n) solution, try coding another solution using the divide and conquer approach, which is more subtle.*/
 
+function maxSumArray(nums){
+    let max = nums[0];
+    let sum = 0
+    nums.map((num) => {
+    if (num >= num + sum){
+        sum = num
+    } else {
+        sum = num + sum        
+    }
+    if(sum > max){
+        max = sum
+    }
+   })
+    return max
+}
 
 function subArrays(arr){
     return arr.reduce((arrays,v,i,a) => {
@@ -19,5 +34,6 @@ function subArrays(arr){
 }
 
 module.exports = {
-    subArrays
+    subArrays,
+    maxSumArray
 }
